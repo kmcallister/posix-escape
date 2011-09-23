@@ -32,11 +32,11 @@ mangled = id
 mangled = filter ((< 0x80) . fromEnum)
 #endif
 
-prop_escaped :: String -> PropertyM IO ()
-prop_escaped xs = do
+prop_escaped :: String -> Property
+prop_escaped xs = monadicIO $ do
     pre (all (/= '\0') xs)
     ys <- run $ echo (escape xs)
     assert (mangled xs == ys)
 
 main :: IO ()
-main = quickCheck (monadicIO . prop_escaped)
+main = quickCheck prop_escaped
