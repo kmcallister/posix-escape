@@ -1,4 +1,6 @@
-FIXME
+shell-escape provides functions to wrap a String so it can be used within a
+Unix shell command line, and end up as a single argument to the program
+invoked.
 
 Documentation is hosted at http://hackage.haskell.org/package/shell-escape
 
