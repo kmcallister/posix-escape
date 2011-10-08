@@ -13,6 +13,12 @@ Haskell @process@ package, which is bundled with GHC 7.0.  Under such
 circumstances this module /will not/ prevent malicious input from escaping the
 quotation.
 
+This bug was fixed in @process-1.1@, which ships with GHC 7.2:
+
+* <http://hackage.haskell.org/trac/ghc/ticket/4006>
+
+* <http://hackage.haskell.org/trac/ghc/ticket/1414>
+
 To repeat: Escaping untrusted input using this module and passing it to the
 @process@ package in GHC 7.0 is NOT SAFE and can allow MALICIOUS CODE
 EXECUTION.  Use @System.Posix.Escape@ as a safer alternative.
