@@ -1,4 +1,4 @@
-name:                shell-escape
+name:                posix-escape
 version:             0.1
 license:             BSD3
 license-file:        LICENSE
@@ -34,4 +34,4 @@ library
 
 source-repository head
     type:     git
-    location: git://github.com/kmcallister/shell-escape.git
+    location: git://github.com/kmcallister/posix-escape.git

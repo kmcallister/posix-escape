@@ -1,11 +1,11 @@
-shell-escape provides functions to wrap a String so it can be used within a
+posix-escape provides functions to wrap a String so it can be used within a
 Unix shell command line, and end up as a single argument to the program
 invoked.
 
-Documentation is hosted at http://hackage.haskell.org/package/shell-escape
+Documentation is hosted at http://hackage.haskell.org/package/posix-escape
 
 To build the documentation yourself, run
 
   $ cabal configure && cabal haddock --hyperlink-source
 
-This will produce HTML documentation under dist/doc/html/shell-escape.
+This will produce HTML documentation under dist/doc/html/posix-escape.
